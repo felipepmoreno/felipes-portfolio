@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import avatar from './assets/images/profilePicLinkedin.jpg'; 
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="portfolio-container">
+      <div className="header">
+        <img src={avatar} alt="Felipe Pereira Moreno" className="profile-pic"/>
+        <h1>Felipe Pereira Moreno</h1>
+      </div>
+      <div className="content">
+      <h2>Contatos</h2>
+        <ul>
+          <li>Email: seuemail@email.com</li>
+          <li>Telefone: (xx) xxxx-xxxx</li>
+          <li>LinkedIn: link_para_seu_perfil</li>
+          <li>GitHub: link_para_seu_perfil</li>
+        </ul>
+        <h2>Resumo</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          Escreva aqui um breve resumo sobre você, sua formação, experiência e habilidades.
+        </p>       
+      </div>
     </div>
   );
 }
